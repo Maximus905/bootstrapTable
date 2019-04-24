@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+  <style>
+    body {
+      height: 90vh;
+    }
+    .p-main {
+      min-height: 0px;
+    }
+    .t-box {
+      height: 100%;
+      min-width: 500px; /* set a minimum width for table */
+      border: 1px solid #000; /* for example */
+    }
+    .t-hd-bd-box {
+      min-height: 0;
+      overflow-x: auto;
+    }
+    .t-hd-box {
+    
+    }
+    .t-bd-box {
+      min-height: 0;
+      overflow: initial;
+      overflow-y: scroll;
+    }
+    .t-bd-box-sz {
+      width: calc(900px + 17px); /* = t-body-content.width should be calculated with JS */
+      overflow-x: hidden
+    }
+    .t-footer-box-sz {
+      /* min-width: 600px; */
+    }
+    /* content emulation */
+    .t-body-content {
+      width: 900px; /*  */
+      height: 1200px;
+    }
+    .t-header-content {
+      width: 900px; /* should be calculated with JS */
+      height: 30px;
+    }
+  </style>
+  <title>Bootstrap Table (flex box)</title>
+</head>
+
+<body class="d-flex flex-column">
+    <header class="bg-light">PAGE HEADER - Bootstrap Table mark up(flex box)</header>
+    <main class="p-main container-fluid flex-grow-1 bg-white">
+      <div class="t-box d-flex flex-column bg-success">
+        <div class="t-hd-bd-box d-flex flex-column flex-grow-1 bg-secondary">
+          <div class="t-hd-box bg-light">
+            <div class="t-header-content bg-primary">Table Header</div>
+          </div>
+          <div class="t-bd-box t-bd-box-sz bg-info">
+            <div class="t-body-content bg-warning">Table Body Content</div>
+          </div>
+        </div>
+        <div class="t-footer-box t-footer-box-sz bg-primary">Table Footer</div>
+      </div>
+    </main>
+    <footer class="bg-light">PAGE FOOTER</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
